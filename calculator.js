@@ -43,6 +43,11 @@ function calc() {
     }
 
     function del() {
+        if (preview) {
+            resultElement.textContent = '';
+            preview = false;
+        }
+
         let text = resultElement.textContent;
         resultElement.textContent = text.slice(0, text.length - 1);
     }

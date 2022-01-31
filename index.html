@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="calculator.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div id="calculator">
+            <h1>Calculator</h1>
+            <p class="text-element" id="equation"></p>
+            <p class="text-element" id="user-input"></p>
+            <div>
+                <input
+                    type="button"
+                    value="AC"
+                    class="key double-width"
+                    id="clear"
+                />
+                <input type="button" value="DEL" , class="key" id="del" />
+                <input type="button" value="÷" , class="key" id="divide" />
+            </div>
+            <div>
+                <input type="button" value="7" , class="key" />
+                <input type="button" value="8" , class="key" />
+                <input type="button" value="9" , class="key" />
+                <input type="button" value="*" , class="key" id="multiply" />
+            </div>
+            <div>
+                <input type="button" value="4" , class="key" />
+                <input type="button" value="5" , class="key" />
+                <input type="button" value="6" , class="key" />
+                <input type="button" value="+" , class="key" id="sum" />
+            </div>
+            <div>
+                <input type="button" value="1" , class="key" />
+                <input type="button" value="2" , class="key" />
+                <input type="button" value="3" , class="key" />
+                <input type="button" value="-" , class="key" id="subtract" />
+            </div>
+            <div>
+                <input type="button" value="." , class="key" />
+                <input type="button" value="0" , class="key" />
+                <input
+                    type="button"
+                    value="="
+                    class="key double-width"
+                    id="equal"
+                />
+            </div>
+        </div>
+    </body>
+    <script>
+        window.onload = () => {
+            calc();
+        };
+    </script>
+</html>

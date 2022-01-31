@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+body {
+    background: linear-gradient(0.25turn, #029df5, #00dc6f);
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+#calculator {
+    display: inline-block;
+    padding: 20px 0px 50px 20px;
+}
+
+#calculator > h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px 0px 10px 0px;
+}
+
+#calculator > div {
+    display: flex;
+}
+
+.text-element {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 380px;
+    height: 20px;
+    margin: 0;
+
+    text-align: end;
+    padding-right: 20px;
+}
+
+#user-input {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+#equation {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.key {
+    background: lightblue;
+    border: 1px solid white;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+}
+
+.key:hover {
+    background-color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.double-width {
+    width: 200px;
+}

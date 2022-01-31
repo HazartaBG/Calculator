@@ -76,7 +76,7 @@ function calc() {
                 equation = equation.replace('÷', '/');
             let result = Number(eval(equation));
 
-            if (isNaN(result) || result == Infinity) {
+            if (isNaN(result)) {
                 resultElement.textContent = '0';
             } else {
                 if (result % 1 != 0) {

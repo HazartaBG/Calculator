@@ -22,6 +22,8 @@ function calc() {
             if (resultElement.textContent.length < 22) {
                 resultElement.textContent += currentValue;
             }
+        } else if (buttonElement.id == 'clear') {
+            clear();
         } else if (resultElement.textContent.length) {
             if (
                 equationElement.textContent.length &&
@@ -40,6 +42,7 @@ function calc() {
 
     function clear() {
         equationElement.textContent = '';
+        resultElement.textContent = '';
     }
 
     function del() {
